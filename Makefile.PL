@@ -22,7 +22,8 @@ requires 'XML::Feed::Deduper';
 requires 'URI';
 
 build_requires 'Test::More';
+
 install_script('xircd');
-author_tests('xt');
+recursive_author_tests('xt');
 auto_include;
 WriteAll;
