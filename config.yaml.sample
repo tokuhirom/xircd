@@ -10,9 +10,9 @@ ircd:
   ircd_option:
     no_nick_tweaks: 1
 components:
-# - module: Time
-#   nick: time
-#   interval: 1
+  - module: Time
+    nick: time
+    interval: 1
 # - module: RSS
 #   url: http://search.cpan.org/uploads.rdf
   - module: Echo
