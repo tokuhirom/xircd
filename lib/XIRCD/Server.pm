@@ -7,8 +7,8 @@ use Encode;
 use POE qw/Component::Server::IRC/;
 use Devel::Caller::Perl qw/called_args/;
 
-sub self ()  { ( called_args(0) )[0]; }
-sub get_args { return ( called_args(0) )[ 10 .. 20 ]; }
+sub self ()  { ( called_args(0) )[0]; } ##  no critic.
+sub get_args { return ( called_args(0) )[ 10 .. 20 ]; } ## no critic.
 
 {
     my %SERVER_EVENTS;
@@ -34,7 +34,7 @@ sub get_args { return ( called_args(0) )[ 10 .. 20 ]; }
         );
     }
 
-    sub event ($&) {
+    sub event ($&) { ## no critic
         my $pkg = caller(0);
         my ( $event_name, $cb ) = @_;
 
