@@ -22,6 +22,7 @@ requires 'XML::Feed::Deduper';
 requires 'URI';
 
 build_requires 'Test::More';
+test_requires 'AnyEvent::IRC';
 
 install_script('xircd');
 recursive_author_tests('xt');
