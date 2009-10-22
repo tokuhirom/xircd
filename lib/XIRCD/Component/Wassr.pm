@@ -60,7 +60,7 @@ sub init {
 sub receive_message {
     my ($self, $message) = @_;
 
-    debug "send:", $message;
+    debug "send message to wassr:", $message;
     $self->jabber->send_message('test', 'wassr-bot@wassr.jp');
 }
 
