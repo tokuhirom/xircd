@@ -10,11 +10,11 @@ requires 'Any::Moose' => 0.08;
 requires 'POE' => 1.004;
 requires 'POE::Component::Server::IRC' => 1.38;
 
-requires 'AnyEvent' => 4.8;
+requires 'AnyEvent' => 4.86;
 requires 'AnyEvent::HTTP' => 1.4;
 requires 'AnyEvent::XMPP' => 0.5;
 requires 'JSON' => 2.12;
-requires 'Coro' => 5.151;
+requires 'Coro' => 5.161;
 
 requires 'Mouse' => 0.27;
 requires 'XML::Feed';
